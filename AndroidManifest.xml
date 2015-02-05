@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.silive.SharedWallet"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.bytepad.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:name=".StartNewWallet"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.bytepad.STARTNEWWALLET" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:name=".ShowResult"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.bytepad.SHOWRESULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+                <activity
+            android:name=".Showdatabase"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.bytepad.SHOWDATABASE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:name=".Create_An_Entry"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.bytepad.CREATE_AN_ENTRY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+                </application>
+
+</manifest>
